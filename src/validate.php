@@ -1,4 +1,3 @@
-
 <?php
 declare(strict_types=1);
 
@@ -20,9 +19,4 @@ function validate_email(string $v): bool
 function validate_length(string $v, int $min, int $max): bool
 {
     return mb_strlen($v) >= $min && mb_strlen($v) <= $max;
-}
-t $min, int $max): bool
-{
-    // TODO: return true when mb_strlen($v) is within [$min, $max]
-    return false;
 }
