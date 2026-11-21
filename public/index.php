@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (!validate_required($name)) {
         $errors['name'] = 'Name is required.';
     } elseif (!validate_length(trim($name), 2, 60)) {
-        $errors['name'] = 'Name must be 2 to 60 characters.';
+        $errors['name'] = 'Name is too short or too long. Must be 2 to 60 characters.';
     }
 
     if (!validate_email($email)) {
